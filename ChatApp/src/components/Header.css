@@ -1,0 +1,41 @@
+.header__left img{
+    height: 4rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+    background-color: #fff2cc;
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+}
+.header__menu h3{
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+}
+.header__menu h3 span{
+    display: flex;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+}
+.text__imput{
+    margin: 1rem;
+}

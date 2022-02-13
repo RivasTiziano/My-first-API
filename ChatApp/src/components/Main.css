@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-200px);
+}
+.main__input{
+    padding: 1rem;
+    margin: 1rem;
+}
+.main__inputForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__inputFormText{
+    flex: 0.9;
+}

@@ -1,0 +1,17 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.app__central{
+    display: flex;
+    width: 100vh;
+    max-width: 100vh;
+    margin: 4rem;
+    transition: transform 0.6s ease-in-out;
+}
+
+
+.app__central.displayed{
+    transform: translateX(400px);
+}
