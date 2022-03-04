@@ -1,0 +1,222 @@
+.container {
+    transition: all .3s;
+    font-family: 'Inter';
+    margin: 0 auto;
+    width: 1200px;
+    padding: 30px;
+}
+.title-text{
+    margin: 0;
+    font-size: 28px;
+}
+.sub-title{
+    color: rgb(139, 143, 167);
+    font-size: 14px;
+    margin: 5px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.overview{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 30px;
+}
+.facebook-box{
+    border-top: 4px solid #278CE3;
+}
+.twitter-box{
+    border-top: 4px solid #329ADD;
+}
+.instagram-box{
+    border-top: 4px solid rgb(255, 187, 0);
+}
+.youtube-box{
+    border-top: 4px solid #C2032B;;    
+}
+.overview-element{
+    border-radius: 5px;
+    background: rgb(240, 243, 250);
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    padding: 10px;
+}
+.overview-element:hover{
+    background: rgba(111, 124, 199, 0.192) !important; 
+}
+
+
+.overviews-today-container-all{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.overviews-today-element{
+    cursor: pointer;
+    border-radius: 5px;
+    width: 220px;
+    height: 110px;
+    background: rgb(240, 243, 250);
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.overviews-today-element:hover{
+    background: rgba(111, 124, 199, 0.192) !important
+}
+.followers-today-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.box-header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.followers-number{
+    margin: 0px;
+}
+.followers{
+    margin: 20px;
+}
+.dark-mode-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.dark-mode-area{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    width: 50px;
+    height: 28px;
+    background: linear-gradient(to left, #09ecc7, #d312a3);
+    border-radius: 50px;
+    flex-direction: row;
+    cursor: pointer;
+}
+.dark-mode-button{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.overviews-today-title{
+    font-size: 25px;
+    margin: 40px 0 15px 0;
+}
+.user{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(139, 143, 167)
+}
+.overviews-today-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.overviews-today-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.overviews-today-percentaje-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.overviews-today-number{
+    margin: 0;
+}
+.overviews-today-element-title{
+    color: rgb(131, 137, 170);
+    font-size: 15px;
+}
+.followers-number{
+    font-size: 55px;
+}
+.followers{
+    margin: 10px;
+    color: rgb(139, 143, 167);
+    font-weight: 300;
+    font-size: 15px;
+}
+.followers-today{
+    color: #5DB8A1;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1260px) {
+    .container{
+        width: 1000px;
+    }
+    .overview-element{
+        width: 200px;
+        height: 160px;
+    }
+    .followers-number{
+        font-size: 35px;
+    }
+    .overviews-today-element{
+        width: 180px;
+        height: 80px;
+        padding: 20px 20px;
+        padding-top: 0;
+    }
+    .overviews-today-number{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .container{
+        width: 500px;
+    }
+    .overview{
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+@media screen and (max-width: 560px) {
+    .container{
+        width: 280px;
+        height: 330vh;
+    }
+    .overview{
+        grid-template-columns: repeat(1, 4fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overviews-today-container-all{
+       flex-direction: column;
+    }
+    .overviews-today{
+        
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-text{
+        font-size: 23px;
+    }
+}
