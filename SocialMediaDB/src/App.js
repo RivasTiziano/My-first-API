@@ -2,7 +2,7 @@ import './App.css';
 import { SocialMediaDB } from './SocialMediaDB';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <SocialMediaDB/>
     </div>
